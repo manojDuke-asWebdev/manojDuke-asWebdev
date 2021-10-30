@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Personal Portfolio</title>
+ <link rel="stylesheet" href="main.css" type="text/css">
+ <main class="css"></main>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+ <div class="head">
+  <div class="logo">
+   <a href="#">judo</a>
+  </div>
+  <div class="navbar">
+    <span style="float:right" class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars"></i>
+    </span>
+   <ul class="nv">
+    <li><a href="#">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="#">services</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">testimonial</a></li>
+    <li><a href="#">blog</a></li>
+    <li><a href="#">contact</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="middle-section">
+  <div class='middle-cont'>
+   <span>I'm <font>Manoj</font></span>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   <ul class="social-icons">
+    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+   </ul>
+  </div>
+  <div class="box-mirror">
+  </div>
+ </div>
+ <div class="final-wrapper">
+  <div class="card">
+   <h5>about me</h5>
+   <span>hello! I am marimuthu manoj</span>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum accusamus asperiores quos molestiae numquam ullam amet dolore provident rem molestias, cum quo sint officia. Ratione atque suscipit aperiam asperiores fuga deleniti voluptatem ea sed dolore soluta doloribus alias delectus ipsam facere, voluptates quibusdam molestiae inventore dolorem necessitatibus unde quas nobis quod! Exercitationem modi voluptas consequuntur accusamus neque odio architecto ipsam.</p>
+   <div class="rating">
+    <h5>html</h5>
+    <span id="html"></span>
+    <h5>css</h5>
+    <span id="css"></span>
+    <h5>javascript</h5>
+    <span id="javascript"></span>
+   </div>
+  </div>
+  <div class="profile">
+   <img class="profile-content" src="profile.jpg" alt="sorry not available">
+  </div>
+ </div>
+ <div class="service-wrapper">
+  <div class="tag-service-wrapper">
+   <h4>what I do</h4>
+   <h3>My services</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat vero iusto officiis vel corrupti commodi ut maiores vitae, possimus quos unde nulla suscipit aut reiciendis dicta quidem dolores hic!</p>
+   <button class="btn">see my works</button>
+  </div>
+  <div class="work">
+    <div class="position">
+      <i class="fas fa-pencil-alt"></i>
+      <h3>web design</h3>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <div class="position">
+      <i class="fas fa-leaf"></i>
+      <h3>logo design</h3>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <div class="btn-nav">
+      <button><i class="fas fa-arrow-left"></i></button>
+      <button><i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+ </div>
+ <div class="footer">
+   <h3>see my works</h3>
+   <span>Portfolio</span>
+   <ul>
+      <li><a href="#">all</a></li>
+      <li><a href="#">designs</a></li>
+      <li><a href="#">development</a></li>
+      <li><a href="#">plugins</a></li>
+      <li><a href="#">photogrphy</a></li>
+   </ul>
+ </div>
+ <script>
+
+  let html = 8;
+  let css = 5;
+  let javascript = 9;
+  let percent = (x) => (100/10)*x
+  let d = document;
+  d.getElementById('html').style.width = String(percent(html))+"%";
+  d.getElementById('css').style.width = String(percent(css))+"%";
+  d.getElementById('javascript').style.width = String(percent(javascript))+"%";
+
+  let menubtn = d.getElementById('menu-icon').addEventListener('click', function() {
+    var elems = document.getElementsByClassName('nv');
+    if( elems[0].style.display == 'none' ) {
+      for (var i=0;i<elems.length;i+=1){
+        elems[i].style.display = 'block';
+      }
+    }
+    else {
+      for (var i=0;i<elems.length;i+=1){
+        elems[i].style.display = 'none';
+      }
+    }
+  })
+
+ </script>
+</body>
+</html>
