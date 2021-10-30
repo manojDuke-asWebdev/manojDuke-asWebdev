@@ -123,12 +123,12 @@
 
 .profile-content{
  /* position:absolute; */
- transform: rotateY(180deg) skewY(15deg) translateY(40px);
+ transform: rotateY(180deg) skewY(7deg) translateY(40px);
  right: 0;
  width: 360px;
  outline: 10px solid #111;
  border: 10px solid transparent;
- box-shadow: 3px 3px 3px #555;
+ box-shadow: -6px 3px 6px 10px rgb(59, 57, 57);
 }
 
 .profile-reflect  {
